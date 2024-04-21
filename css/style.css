@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bus-layout {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #f0ad4e; /* Orange */
+}
+
+.seat.reserved {
+    background-color: #d9534f; /* Red */
+    cursor: not-allowed;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info select,
+.info .total-price {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

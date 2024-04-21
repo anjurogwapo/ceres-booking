@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/about.png') no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}

@@ -1,0 +1,111 @@
+/* Base styles, ensure consistency with profile.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.profile-header a {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-header a:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c300;
+}
+
+/* Page-specific styles for updates.php */
+.updates-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.updates-container h2 {
+    color: #333;
+}
+
+.updates-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.updates-list li {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.updates-list li:hover {
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #ffd700; /* Set table background to yellow */
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #333; /* Set text color to dark for visibility */
+}
+
+th {
+    background-color: #e6c300; /* A slightly darker yellow for headers */
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe052; /* A lighter yellow for alternate rows */
+}
+
+tr:hover {
+    background-color: #fcd34d; /* A light yellow for hover effect */
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

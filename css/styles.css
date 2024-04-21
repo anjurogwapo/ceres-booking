@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('cereslogin.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    width: 100%; /* Assuming you want the banner to cover the entire viewport */
+    height: 100vh; /* Assuming you want the banner to cover the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 125%; /* 60px */
+}
+
+.button, .secondary-button {
+    display: flex;
+    gap: 10px;
+}
+
+.button button, .secondary-button button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.button button {
+    background-color: #FFB600;
+}
+
+.secondary-button button {
+    background-color: #863000;
+}

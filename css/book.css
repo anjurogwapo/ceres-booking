@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navigation a, .navigation a:visited {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover, .navigation a:active {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.bus-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seat.reserved {
+    background-color: #666;
+}
+
+.seat.selected {
+    background-color: #ffd700;
+}
+
+.driver-space, .empty-space, .aisle-space {
+    width: 50px;
+    height: 50px;
+}
+
+select, .total-price, button {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c300;
+}
+
+.bus-container {
+flex: 1; /* Adjust as needed */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.driver-area {
+text-align: center;
+padding: 10px;
+background-color: #444;
+color: #fff;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.row {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.seat {
+width: 22%; /* Adjust based on container width */
+margin: 5px;
+padding: 10px;
+background-color: #ddd;
+text-align: center;
+cursor: pointer;
+}
+
+.aisle {
+width: 5%; /* Adjust the aisle width */
+}
+
+.seat.reserved {
+background-color: #666;
+}
+
+.seat.selected {
+background-color: #ffd700;
+}
+
+
+.main-container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+}
+
+.booking-controls {
+flex: 1; /* Adjust as needed */
+display: flex;
+flex-direction: column;
+padding: 20px;
+}
+
+/* Add a margin to each control inside booking-controls for spacing */
+.booking-controls > * {
+margin-bottom: 10px;
+}
+
+#cancelBooking:hover {
+background-color: red;
+color: #fff;
+}
+
+#checkout:hover {
+background-color: green;
+color: #fff;
+}
